@@ -1,6 +1,6 @@
 {
   "chromeWebSecurity": false,
-  "projectId": "pv5yoq",
+  "projectId": "******",
   "reporter": "cypress-testrail-reporter",
   "reporterOptions": {
     "host": "https://1wa.testrail.com",
@@ -15,6 +15,9 @@
   },
 
   "env": {
-    "prodUrl": "https://1wa.org/#/"
-  }
+    "prodUrl": "https://1wa.org/#/",
+    "contentfulTestUrl": "https://be.contentful.com/login"
+  },
+  "defaultCommandTimeout": 30000,
+  "pageLoadTimeout": 50000
 }

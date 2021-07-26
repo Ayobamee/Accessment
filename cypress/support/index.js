@@ -19,6 +19,7 @@ import './ProgramsCommands'
 import './AssertionsCommands'
 import './LearnMoreCommands'
 import './MicrobixCommands'
+import './LoginContentful'
 
 
 

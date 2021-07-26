@@ -19,6 +19,7 @@ import ProvidersPage from "../pageObjects/ProvidersPage";
 import SupportPage from "..//pageObjects/SupportPage";
 import CareerPage from "..//pageObjects/CareerPage";
 import LearnMorePage from "../pageObjects/LearnMore";
+import LoginPage from "../pageObjects/Login";
 
 const homePage = new HomePage();
 const progPage = new ProgramPage();
@@ -26,6 +27,7 @@ const progPage = new ProgramPage();
   const supportPage = new SupportPage();
   const careerPage = new CareerPage();
   const learnMorePage = new LearnMorePage();
+  const loginPage = new LoginPage();
 
 const baseUrl = "https://1wa.org/#/";
 
@@ -148,6 +150,12 @@ Cypress.Commands.add('AssertLearnMorePageItems', () => {
 
   //Assert Resources.
   learnMorePage.getResources().should("be.visible")
+
+})
+
+Cypress.Commands.add('LoginAssert', () => {
+  //Assert login element
+  loginPage.get1waEnvironment().should("be.visible")
 
 })
 

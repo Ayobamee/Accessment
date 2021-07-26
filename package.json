@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/cypress run",
-    "headTest": "npm run test -- --headed",
-    "chromeTest": "npm run test -- --browser chrome",
-    "chromeHeadlessTest":"npm run test --headless --browser chrome",
-    "recordDashboardTest": "npm run test --  --record --key f6b575a1-80bd-4210-aa1e-8568362bd814 --reporter mochawesome"
+    "headTest": "npm test -- --headed",
+    "chromeTest": "npm test -- --browser chrome",
+    "chromeHeadlessTest":"npm test --headless --browser chrome",
+    "recordDashboardTest": "npm run test --  --record --key  --reporter mochawesome",
+    "cypressReport": "npm run test -- --record --key ****************"
   },
   "keywords": [
     "testing",

@@ -17,13 +17,16 @@ describe("Corporate Website Regression Test suite", function () {
   const viewMoreProgramTestCase = "C2218";
   const learnMore = "C2252";
   const microbix = "C2253";
+  const loginContentful = "C2282";
 
 
-  
-  
   function openBrowserAndWait() {
     cy.OpenUrl({});
     cy.wait(5000);
+  }
+
+  function openContentful(){
+    cy.OpenContentfulUrl({})
   }
 
 
@@ -128,6 +131,7 @@ describe("Corporate Website Regression Test suite", function () {
      cy.AssertLearnMorePageItems({})
   });
 
+
   it('Validate that when user clicks the microbix button, microbix page items displays ' +microbix, function () {
     //Open 1wa url.
     openBrowserAndWait();
@@ -143,6 +147,17 @@ describe("Corporate Website Regression Test suite", function () {
      //Assert that the Footer Page
      cy.AssertFooterPage({});
   });
+
+
+  it('Validate that users can login to contenful successful ' +loginContentful, function () {
+    //Open contenful test url.
+    openContentful()
+    //Login
+    cy.Login({});
+    //Assert Login
+    cy.LoginAssert({});
+  });
+
 
 
 
