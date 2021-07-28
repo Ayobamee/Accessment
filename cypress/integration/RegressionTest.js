@@ -17,7 +17,9 @@ describe("Corporate Website Regression Test suite", function () {
   const viewMoreProgramTestCase = "C2218";
   const learnMore = "C2252";
   const microbix = "C2253";
+  const addProgramsToCart = "C2257";
   const loginContentful = "C2282";
+
 
 
   function openBrowserAndWait() {
@@ -152,6 +154,15 @@ describe("Corporate Website Regression Test suite", function () {
      cy.AssertFooterPage({});
   });
 
+  it('Validate that users can add programs to cart ' +addProgramsToCart, function () {
+    //Open 1WA test url.
+   openTestUrl()
+   //Click Test Programs
+   cy.TestPrograms({})
+   //Add to cart
+   cy.AddToCart({})
+  });
+
 
   it('Validate that users can login to contenful successful ' +loginContentful, function () {
     //Open contenful test url.
@@ -163,14 +174,7 @@ describe("Corporate Website Regression Test suite", function () {
   });
 
 
-  it('Validate that users can add programs to cart ' , function () {
-    //Open 1WA test url.
-   openTestUrl()
-   //Click Test Programs
-   cy.TestPrograms({})
-   //Add to cart
-   cy.AddToCart({})
-  });
+ 
 
 
 
