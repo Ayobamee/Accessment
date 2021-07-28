@@ -23,6 +23,15 @@ Cypress.Commands.add('OpenUrl', (user) => {
 
 
 
+Cypress.Commands.add('OpenTestUrl', (user) => {
+
+  //Pick Test Url from environment
+  cy.visit(Cypress.env("testUrl"));
+
+})
+
+
+
 
 
 

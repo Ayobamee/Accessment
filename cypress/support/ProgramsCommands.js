@@ -18,9 +18,19 @@ import ProgramPage from "../pageObjects/ProgramPage";
 const Page = new ProgramPage();
   Cypress.Commands.add('Programs', (user) => {
     //Get programs from program page objects
-    Page.getPrograms().click()
+    Page.getPrograms().click()  
+  })
 
-      
+  Cypress.Commands.add('TestPrograms', (user) => {
+    //Get Test programs from program page objects
+    Page.getTestPrograms().click()  
+  })
+
+
+
+  Cypress.Commands.add('AddToCart', (user) => {
+    //Add to cart
+    Page.getAddToCart().click() 
   })
 
 

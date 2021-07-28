@@ -16,6 +16,7 @@
 
   "env": {
     "prodUrl": "https://1wa.org/#/",
+    "testUrl": "https://test.1wa.org/#/",
     "contentfulTestUrl": "https://be.contentful.com/login"
   },
   "defaultCommandTimeout": 30000,

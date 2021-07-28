@@ -29,6 +29,10 @@ describe("Corporate Website Regression Test suite", function () {
     cy.OpenContentfulUrl({})
   }
 
+  function openTestUrl() {
+    cy.OpenTestUrl({})
+  }
+
 
   it('Validate that the website is rendered successfully ' +renderHomeTestCase, function () {
     //Open 1wa url
@@ -155,7 +159,17 @@ describe("Corporate Website Regression Test suite", function () {
     //Login
     cy.Login({});
     //Assert Login
-    cy.LoginAssert({});
+    cy.AssertLogin({});
+  });
+
+
+  it('Validate that users can add programs to cart ' , function () {
+    //Open 1WA test url.
+   openTestUrl()
+   //Click Test Programs
+   cy.TestPrograms({})
+   //Add to cart
+   cy.AddToCart({})
   });
 
 

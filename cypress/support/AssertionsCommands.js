@@ -153,7 +153,7 @@ Cypress.Commands.add('AssertLearnMorePageItems', () => {
 
 })
 
-Cypress.Commands.add('LoginAssert', () => {
+Cypress.Commands.add('AssertLogin', () => {
   //Assert login element
   loginPage.get1waEnvironment().should("be.visible")
 
