@@ -18,6 +18,7 @@ describe("Corporate Website Regression Test suite", function () {
   const learnMore = "C2252";
   const microbix = "C2253";
   const addProgramsToCart = "C2257";
+  const removeProgramsToCart = "C2258";
   const loginContentful = "C2282";
 
 
@@ -34,6 +35,8 @@ describe("Corporate Website Regression Test suite", function () {
   function openTestUrl() {
     cy.OpenTestUrl({})
   }
+
+  
 
 
   it('Validate that the website is rendered successfully ' +renderHomeTestCase, function () {
@@ -163,7 +166,7 @@ describe("Corporate Website Regression Test suite", function () {
    cy.AddToCart({})
   });
 
-  it('Validate that users can remove programs to cart ', function () {
+  it('Validate that users can remove programs to cart ', +removeProgramsToCart, function () {
     //Open 1WA test url.
    openTestUrl()
    //Click Test Programs
