@@ -175,19 +175,20 @@ describe("Corporate Website Regression Test suite", function () {
    cy.AddToCart({})
    //Get Cart
    cy.GetCart({})
-   //Remove prorgram from cart
+   //Remove program from cart
    cy.RemoveFromCart({})
   });
 
 
-  // it('Validate that users can login to contenful successful ' +loginContentful, function () {
-  //   //Open contenful test url.
-  //   openContentful()
-  //   //Login
-  //   cy.Login({});
-  //   //Assert Login
-  //   cy.AssertLogin({});
-  // });
+  it('Validate that users can login to contenful successful ' +loginContentful, function () {
+    //Open contenful test url.
+    openContentful()
+    //Login
+
+    cy.Login({});
+    //Assert Login
+    cy.AssertLogin({});
+  });
 
 
  
