@@ -19,6 +19,15 @@ getAddToCart()
     return cy.get('#ADD_TO_CART_LABEL-2987')
 }
 
+getRemoveFromCart()
+{
+    return cy.get('#REMOVE_FROM_CART-0')
+}
+
+getCart()
+{
+    return cy.get('#MENU_CART_STATUS > .fas')
+}
 
 }
 

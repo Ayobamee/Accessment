@@ -27,10 +27,20 @@ const Page = new ProgramPage();
   })
 
 
-
   Cypress.Commands.add('AddToCart', (user) => {
     //Add to cart
     Page.getAddToCart().click() 
+  })
+
+  Cypress.Commands.add('GetCart', (user) => {
+    //Getcart
+    Page.getCart().click()
+  })
+
+
+  Cypress.Commands.add('RemoveFromCart', (user) => {
+    //Remove to cart
+    Page.getRemoveFromCart().click()
   })
 
 
