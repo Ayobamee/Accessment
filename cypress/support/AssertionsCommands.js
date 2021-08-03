@@ -159,6 +159,12 @@ Cypress.Commands.add('AssertLogin', () => {
 
 })
 
+Cypress.Commands.add('AssertOrder', () => {
+  //Assert Order
+  progPage.getOrderNotication().should("be.visible")
+
+})
+
 
 
 //

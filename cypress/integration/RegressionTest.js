@@ -20,6 +20,7 @@ describe("Corporate Website Regression Test suite", function () {
   const addProgramsToCart = "C2257";
   const removeProgramsToCart = "C2258";
   const loginContentful = "C2282";
+  const checkout = "C2283";
 
 
 
@@ -180,6 +181,40 @@ describe("Corporate Website Regression Test suite", function () {
   });
 
 
+  it('Validate that users can Checkout from a cart ', +checkout, function () {
+    //Open 1WA test url.
+   openTestUrl()
+   //Click Test Programs
+   cy.TestPrograms({})
+   //Add to cart
+   cy.AddToCart({})
+   //Get Cart
+   cy.GetCart({})
+   //Click next
+   cy.ClickNext({force:true})
+   //Enter Org Name
+   cy.EnterOrgName({})
+  //Enter Country
+   cy.EnterCountry({})
+    //Enter Contact Name
+    cy.EnterContactName({})
+     //Enter Email
+     cy.EnterEmail({})
+      //Enter Website
+      cy.EnterWebsite({})
+      //Enter Phone Number
+      cy.EnterPhonenumber({})
+       //Enter Whatsapp
+       cy.EnterWhatsapp({})
+       //Click send
+       cy.ClickSend({})
+       //Assert Order
+       cy.AssertOrder({})
+  });
+    
+   
+
+
   it('Validate that users can login to contenful successful ' +loginContentful, function () {
     //Open contenful test url.
     openContentful()
@@ -189,10 +224,6 @@ describe("Corporate Website Regression Test suite", function () {
     //Assert Login
     cy.AssertLogin({});
   });
-
-
- 
-
 
 
 

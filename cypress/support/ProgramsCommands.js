@@ -43,6 +43,53 @@ const Page = new ProgramPage();
     Page.getRemoveFromCart().click()
   })
 
+  Cypress.Commands.add('ClickNext', (user) => {
+    //Click Next
+    Page.getNext().click()
+  })
+
+  Cypress.Commands.add('EnterOrgName', (user) => {
+    //Click Next
+    Page.getOrgName().type('Test 1wa')
+  })
+
+  Cypress.Commands.add('EnterCountry', (user) => {
+    //Click Next
+    Page.getCountry().type('Nigeria')
+  })
+
+  Cypress.Commands.add('EnterContactName', (user) => {
+    //Click Next
+    Page.getContactName().type('Tester')
+  })
+
+  Cypress.Commands.add('EnterEmail', (user) => {
+    //Click Next
+    Page.getEmail().type("testa@yahoo.com")
+  })
+
+  Cypress.Commands.add('EnterWebsite', (user) => {
+    //Click Next
+    Page.getWebsite().type("www.com")
+  })
+
+  Cypress.Commands.add('EnterPhonenumber', (user) => {
+    //Click Next
+    Page.getPhone().type("07060406267")
+  })
+
+  Cypress.Commands.add('EnterWhatsapp', (user) => {
+    //Click Next
+    Page.getWhatsapp().type("07060406267")
+  })
+
+  Cypress.Commands.add('ClickSend', (user) => {
+    //Click Next
+    Page.getSend().click()
+  })
+
+  
+
 
 
 
