@@ -2,6 +2,7 @@
 
 
 describe("Corporate Website Regression Test suite", function () {
+
   
   const urlLinkTestCase = "C1015";
   const websiteVersionTestCase = "C1016";
@@ -23,6 +24,7 @@ describe("Corporate Website Regression Test suite", function () {
   const checkout = "C2283";
 
 
+  
 
   function openBrowserAndWait() {
     cy.OpenUrl({});
@@ -37,7 +39,7 @@ describe("Corporate Website Regression Test suite", function () {
     cy.OpenTestUrl({})
   }
 
-  
+ 
 
 
   it('Validate that the website is rendered successfully ' +renderHomeTestCase, function () {
