@@ -7,7 +7,7 @@
     "test": "./node_modules/.bin/cypress run",
     "headTest": "npm test -- --headed",
     "chromeTest": "npm test -- --browser chrome",
-    "chromeHeadlessTest":"npm test --headless --browser chrome",
+    "chromeHeadlessTest": "npm test --headless --browser chrome",
     "recordDashboardTest": "npm run test --  --record --key  --reporter mochawesome",
     "cypressReport": "npm run test -- --record --key ****************"
   },
@@ -20,6 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^7.5.0",
-    "cypress-testrail-reporter": "^1.2.2"
+    "cypress-iframe": "^1.0.1"
+    
   }
 }

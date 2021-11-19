@@ -1,23 +1,8 @@
 {
   "chromeWebSecurity": false,
   "projectId": "******",
-  "reporter": "cypress-testrail-reporter",
-  "reporterOptions": {
-    "host": "https://1wa.testrail.com",
-    "username": "aelutade@1wa.org",
-    "password": "dUF4uXL1Uy5CUBsnT/xj-jnp3an662MzcpsjOZGkz",
-    "runName": "CorporateWebsiteRegression",
-    "projectId": 2,
-    "includeAllInTestRun": false,
-    "suiteId": 1,
-    "createTestRun": true,
-    "testCases":[1015,1016,1017,1018,1019,1020,1021,1022,1024,1025,1026,2218,2252,2253,2257,2258,2282]
-  },
-
   "env": {
-    "prodUrl": "https://1wa.org/#/",
-    "testUrl": "https://test.1wa.org/#/",
-    "contentfulTestUrl": "https://be.contentful.com/login"
+    "prodUrl": "https://www.saleschamp.nl/"
   },
   "defaultCommandTimeout": 30000,
   "pageLoadTimeout": 50000

@@ -14,23 +14,13 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './BaseUrlCommands'
-import './ProgramsCommands'
-import './AssertionsCommands'
-import './LearnMoreCommands'
-import './MicrobixCommands'
-import './LoginContentful'
-
-
-
+import "./OpenBaseUrlActions";
+import "./CareerActions";
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-
 //import postgreSQL from 'cypress-postgresql';
 //postgreSQL.loadDBCommands();
-
-
 
 //import postgreSQL from 'cypress-postgresql';
 //postgreSQL.loadDBCommands();

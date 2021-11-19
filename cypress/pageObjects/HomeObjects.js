@@ -6,10 +6,7 @@ class CareerPage {
   }
   
 
-  getViewHotRolesButton()
-  {
-    return cy.get('.careers-button')
-  }
+ 
 
 }
 
